@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import plotly.express as px
-import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="graphs")
 st.title("Convert from PDF to CSV")
