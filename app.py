@@ -4,7 +4,7 @@ import streamlit as st
 import plotly.express as px
 
 st.set_page_config(page_title="graphs")
-st.title("Convert from PDF to CSV")
+st.title("Charts")
 
 uploaded_file = st.file_uploader("Choose an Excel file", type=["xlsx", "xls"])
 
@@ -27,7 +27,7 @@ if uploaded_file is not None:
         
         date_col = st.selectbox("Select x-axis column", df.columns)
         
-        data_cols = st.multiselect("Select Data Columns", df.columns, default=df.columns[1])
+        data_cols = st.multiselect("Select Data Columns", df.columns, default=df.columns[3])
         # data_col = "SOUTH LAeq [dB]"
         
         
